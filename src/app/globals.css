@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Colours actually used in components ────────────────────────────── */
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+
+  --color-primary: #000000;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #131b2e;
+  --color-on-primary-container: #7c839b;
+
+  --color-secondary: #0058be;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #2170e4;
+  --color-secondary-fixed-dim: #adc6ff;
+
+  --color-background: #fcf8fa;
+  --color-on-background: #1b1b1d;
+  --color-surface: #fcf8fa;
+  --color-surface-variant: #e4e2e4;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f6f3f5;
+  --color-surface-container: #f0edef;
+  --color-on-surface: #1b1b1d;
+
+  --color-outline: #76777d;
+  --color-outline-variant: #c6c6cd;
+
+  /* ── Spacing (used via Tailwind utility classes) ─────────────────────── */
+  --spacing-sm: 12px;
+  --spacing-md: 24px;
+  --spacing-lg: 40px;
+  --spacing-gutter: 24px;
+  --spacing-margin: 32px;
+
+  /* ── Typography ──────────────────────────────────────────────────────── */
+  --font-manrope: var(--font-manrope);
+  --font-inter: var(--font-inter);
+}
+
+@layer utilities {
+  .font-label-caps {
+    font-family: var(--font-manrope);
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .font-headline-lg {
+    font-family: var(--font-manrope);
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 700;
+  }
+  .font-headline-md {
+    font-family: var(--font-manrope);
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+  }
+  .font-body-lg {
+    font-family: var(--font-manrope);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  .font-body-sm {
+    font-family: var(--font-manrope);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .font-data-mono {
+    font-family: var(--font-inter);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  font-family: var(--font-manrope);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(234, 179, 8, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(234, 179, 8, 0); }
+  100% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(234, 179, 8, 0); }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2s infinite;
+}
