@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { getCommuteRecommendation, CommuteMode, Recommendation } from './recommendation';
+import { getCommuteRecommendation, CommuteMode, Recommendation } from '../../lib/recommendation';
 import { TrafficLevel } from '@/services/traffic';
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────

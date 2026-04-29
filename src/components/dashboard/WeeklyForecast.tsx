@@ -1,8 +1,8 @@
 'use client';
 
 import { ForecastDay } from "@/services/weather";
-import { getWeatherIcon } from "@/lib/utils/weather-codes";
-import { getSmallCommuteModeIcon } from "@/lib/utils/commute-icons";
+import { getWeatherIcon } from "@/components/ui/weather-codes";
+import { getSmallCommuteModeIcon } from "@/components/ui/commute-icons";
 import { getRecommendedModeForForecast } from "@/lib/utils/forecast-mode";
 import { generateIcsContent, downloadIcsFile } from "@/lib/utils/calendar-export";
 

@@ -1,5 +1,5 @@
 import { Recommendation } from "@/lib/recommendation";
-import { getCommuteModeIcon } from "@/lib/utils/commute-icons";
+import { getCommuteModeIcon } from "@/components/ui/commute-icons";
 
 interface HeroRecommendationProps {
   recommendation: Recommendation;

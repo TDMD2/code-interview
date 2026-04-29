@@ -1,6 +1,6 @@
 import { Droplets, Wind } from "lucide-react";
 import { WeatherData } from "@/services/weather";
-import { getWeatherIcon, getWeatherLabel } from "@/lib/utils/weather-codes";
+import { getWeatherIcon, getWeatherLabel } from "@/components/ui/weather-codes";
 
 interface WeatherWidgetProps {
   weather: WeatherData;

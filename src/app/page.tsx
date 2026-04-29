@@ -1,8 +1,8 @@
-import Navigation from "@/components/Navigation";
-import HeroRecommendation from "@/components/HeroRecommendation";
-import WeatherWidget from "@/components/WeatherWidget";
-import TrafficCard from "@/components/TrafficCard";
-import WeeklyForecast from "@/components/WeeklyForecast";
+import Navigation from "@/components/layout/Navigation";
+import HeroRecommendation from "@/components/dashboard/HeroRecommendation";
+import WeatherWidget from "@/components/dashboard/WeatherWidget";
+import TrafficCard from "@/components/dashboard/TrafficCard";
+import WeeklyForecast from "@/components/dashboard/WeeklyForecast";
 
 import { fetchCurrentWeather, fetchWeeklyForecast } from "@/services/weather";
 import { getMockTraffic } from "@/services/traffic";

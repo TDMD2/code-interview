@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { fetchCurrentWeather, fetchWeeklyForecast } from './weather';
+import { fetchCurrentWeather, fetchWeeklyForecast } from '../../services/weather';
 
 describe('Weather Service - Open-Meteo API Integration', () => {
   // Save the original fetch function so we can restore it later
